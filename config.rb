@@ -4,15 +4,15 @@ require './lib/unique_head.rb'
 # Markdown
 set :markdown_engine, :redcarpet
 set :markdown,
-    fenced_code_blocks: true,
-    smartypants: true,
-    disable_indented_code_blocks: true,
-    prettify: true,
-    strikethrough: true,
-    tables: true,
-    with_toc_data: true,
-    no_intra_emphasis: true,
-    renderer: UniqueHeadCounter
+  fenced_code_blocks: true,
+  smartypants: true,
+  disable_indented_code_blocks: true,
+  prettify: true,
+  strikethrough: true,
+  tables: true,
+  with_toc_data: true,
+  no_intra_emphasis: true,
+  renderer: UniqueHeadCounter
 
 # Assets
 set :css_dir, 'stylesheets'
