@@ -41,7 +41,7 @@ Creates a customer for the current organisation and returns it's attributes
 ```plaintext
 POST /api/v1/customers
 Content-Type: application/json
-Authorization: Bearer 1f987ee6844a3add62d5f4c5fad7961f
+Authorization: Bearer 01ecce3cb6732dc6e5e64f66045c113f
 ```
 
 `POST /api/v1/customers`
@@ -52,22 +52,22 @@ Authorization: Bearer 1f987ee6844a3add62d5f4c5fad7961f
 ```json
 {
   "customer": {
-    "email": "rudolph_olson@fay.biz",
+    "email": "marcie@raynor.biz",
     "terms_and_conditions": true,
     "privacy_policy": true,
-    "registered_from_ip": "190.241.145.224",
+    "registered_from_ip": "127.197.254.149",
     "profile": {
       "first_name": "Danny",
       "last_name": "Ocean",
       "title": "mr",
       "phone": "+3256980144",
       "birth_date": "2000-04-08",
-      "city": "Goldnerfort",
-      "street": "26206 Cole Crossroad",
-      "building": "124",
-      "building_addon": "Suite 599",
-      "postal_code": "48191",
-      "language": "en"
+      "city": "South Fermin",
+      "street": "1288 Marquardt Course",
+      "building": "42630",
+      "building_addon": "Suite 174",
+      "postal_code": "01650-4934",
+      "language": "fr"
     }
   }
 }
@@ -76,7 +76,7 @@ Authorization: Bearer 1f987ee6844a3add62d5f4c5fad7961f
 
 | Name | Description |
 |:-----|:------------|
-| customer[email] *required* | A customer's email. Serves as an unique identifier of a customer. A customer with the same email must be not registered before. |
+| customer[email] *required* | A customer's email. Serves as an unique identifier of a customer. A customer with the same email must not exist in the system. |
 | customer[terms_and_conditions] *required* | Type: *boolean*. Flag that terms and conditions is accepted |
 | customer[privacy_policy] *required* | Type: *boolean*. Flag that the privacy policy is accepted |
 | customer[registered_from_ip] *required* | Customer registered from ip |
@@ -105,32 +105,32 @@ Content-Type: application/json; charset=utf-8
 
 ```json
 {
-  "id": 5,
-  "email": "rudolph_olson@fay.biz",
-  "created_at": "2020-04-08T11:37:15.978Z",
-  "updated_at": "2020-04-08T11:37:16.044Z",
+  "id": 26,
+  "email": "marcie@raynor.biz",
+  "created_at": "2020-04-08T13:49:04.227Z",
+  "updated_at": "2020-04-08T13:49:04.247Z",
   "organisation": {
-    "id": 5,
-    "name": "Dooley LLC",
-    "domain": "torphyaufderhar-hanecrooks-3",
-    "created_at": "2020-04-08T11:37:15.906Z"
+    "id": 21,
+    "name": "Bradtke Inc",
+    "domain": "hammesgraham-cummings-16",
+    "created_at": "2020-04-08T13:49:04.184Z"
   },
   "profile": {
-    "id": 5,
-    "customer_id": 5,
+    "id": 24,
+    "customer_id": 26,
     "title": "mr",
     "first_name": "Danny",
     "last_name": "Ocean",
     "birth_date": "2000-04-08",
     "phone": "+3256980144",
-    "city": "Goldnerfort",
-    "street": "26206 Cole Crossroad",
-    "building": "124",
-    "building_addon": "Suite 599",
-    "postal_code": "48191",
-    "language": "en",
-    "created_at": "2020-04-08T11:37:15.981Z",
-    "updated_at": "2020-04-08T11:37:15.981Z"
+    "city": "South Fermin",
+    "street": "1288 Marquardt Course",
+    "building": "42630",
+    "building_addon": "Suite 174",
+    "postal_code": "01650-4934",
+    "language": "fr",
+    "created_at": "2020-04-08T13:49:04.229Z",
+    "updated_at": "2020-04-08T13:49:04.229Z"
   }
 }
 ```
@@ -180,7 +180,7 @@ Content-Type: application/json; charset=utf-8
 ```plaintext
 POST /api/v1/customers
 Content-Type: application/json
-Authorization: Bearer 40ffd9c0282b540713abb5b50d70ecd9
+Authorization: Bearer 78cc9766eafe035b75d4f43fd83d0aea
 ```
 
 `POST /api/v1/customers`
@@ -191,21 +191,21 @@ Authorization: Bearer 40ffd9c0282b540713abb5b50d70ecd9
 ```json
 {
   "customer": {
-    "email": "carlie.lakin@hicklefritsch.org",
+    "email": "jeffry@hammes.co",
     "terms_and_conditions": true,
     "privacy_policy": true,
-    "registered_from_ip": "100.161.13.144",
+    "registered_from_ip": "42.130.46.89",
     "profile": {
       "first_name": null,
       "last_name": "Ocean",
       "title": "mr",
       "phone": "+3256980144",
       "birth_date": "2000-04-08",
-      "city": "Lake Eleneshire",
-      "street": "302 Louie Walks",
-      "building": "9404",
-      "building_addon": "Apt. 643",
-      "postal_code": "32561-1800",
+      "city": "Connellyhaven",
+      "street": "817 Andre Park",
+      "building": "485",
+      "building_addon": "Apt. 813",
+      "postal_code": "38502-6787",
       "language": "nl"
     }
   }
@@ -215,7 +215,7 @@ Authorization: Bearer 40ffd9c0282b540713abb5b50d70ecd9
 
 | Name | Description |
 |:-----|:------------|
-| customer[email] *required* | A customer's email. Serves as an unique identifier of a customer. A customer with the same email must be not registered before. |
+| customer[email] *required* | A customer's email. Serves as an unique identifier of a customer. A customer with the same email must not exist in the system. |
 | customer[terms_and_conditions] *required* | Type: *boolean*. Flag that terms and conditions is accepted |
 | customer[privacy_policy] *required* | Type: *boolean*. Flag that the privacy policy is accepted |
 | customer[registered_from_ip] *required* | Customer registered from ip |
@@ -281,7 +281,7 @@ Current organisation defined based on provided API token.
 ```plaintext
 GET /api/v1/customers?page=1&amp;per=2
 Content-Type: application/json
-Authorization: Bearer 4310d45f6dc16ff00499d39e5afcfedc
+Authorization: Bearer 451e5b357e0575565b6cf26c9488bec7
 ```
 
 `GET /api/v1/customers`
@@ -319,61 +319,61 @@ Content-Type: application/json; charset=utf-8
   "total_pages": 2,
   "records": [
     {
-      "id": 14,
-      "email": "clay.rice@skilepencer.org",
-      "created_at": "2020-04-08T11:37:16.641Z",
-      "updated_at": "2020-04-08T11:37:16.641Z",
+      "id": 7,
+      "email": "mickey.christiansen@sanford.co",
+      "created_at": "2020-04-08T13:49:03.812Z",
+      "updated_at": "2020-04-08T13:49:03.812Z",
       "organisation": {
-        "id": 20,
-        "name": "Ruecker, Doyle and Hayes",
-        "domain": "krajciklarkin-franeckihoeger-13",
-        "created_at": "2020-04-08T11:37:16.634Z"
+        "id": 9,
+        "name": "Altenwerth-Funk",
+        "domain": "harvey-rippin-8",
+        "created_at": "2020-04-08T13:49:03.808Z"
       },
       "profile": {
-        "id": 14,
-        "customer_id": 14,
+        "id": 5,
+        "customer_id": 7,
         "title": "mr",
-        "first_name": "Jed",
-        "last_name": "Yundt",
-        "birth_date": "1983-04-09",
-        "phone": "+3232411132",
-        "city": "Deonmouth",
-        "street": "Felix Lakes",
-        "building": "509",
-        "building_addon": "Suite 871",
-        "postal_code": "15027",
-        "language": "fr",
-        "created_at": "2020-04-08T11:37:16.651Z",
-        "updated_at": "2020-04-08T11:37:16.651Z"
+        "first_name": "Nia",
+        "last_name": "Krajcik",
+        "birth_date": "1965-07-26",
+        "phone": "+3256980144",
+        "city": "Jaskolskiside",
+        "street": "Swift Roads",
+        "building": "929",
+        "building_addon": "Suite 717",
+        "postal_code": "15635-6980",
+        "language": "nl",
+        "created_at": "2020-04-08T13:49:03.816Z",
+        "updated_at": "2020-04-08T13:49:03.816Z"
       }
     },
     {
-      "id": 16,
-      "email": "reuben@jaskolski.com",
-      "created_at": "2020-04-08T11:37:16.686Z",
-      "updated_at": "2020-04-08T11:37:16.686Z",
+      "id": 9,
+      "email": "jalisa@hermancain.org",
+      "created_at": "2020-04-08T13:49:03.833Z",
+      "updated_at": "2020-04-08T13:49:03.833Z",
       "organisation": {
-        "id": 20,
-        "name": "Ruecker, Doyle and Hayes",
-        "domain": "krajciklarkin-franeckihoeger-13",
-        "created_at": "2020-04-08T11:37:16.634Z"
+        "id": 9,
+        "name": "Altenwerth-Funk",
+        "domain": "harvey-rippin-8",
+        "created_at": "2020-04-08T13:49:03.808Z"
       },
       "profile": {
-        "id": 16,
-        "customer_id": 16,
+        "id": 7,
+        "customer_id": 9,
         "title": "mr",
-        "first_name": "Charlott",
-        "last_name": "O'Keefe",
-        "birth_date": "1969-03-08",
+        "first_name": "Aubrey",
+        "last_name": "Haley",
+        "birth_date": "1997-07-05",
         "phone": "+3232411132",
-        "city": "Murphyhaven",
-        "street": "Swaniawski Vista",
-        "building": "257",
-        "building_addon": "Apt. 306",
-        "postal_code": "65102-7546",
-        "language": "fr",
-        "created_at": "2020-04-08T11:37:16.696Z",
-        "updated_at": "2020-04-08T11:37:16.696Z"
+        "city": "Farahmouth",
+        "street": "Carolyne Crest",
+        "building": "9056",
+        "building_addon": "Apt. 913",
+        "postal_code": "11702-2541",
+        "language": "nl",
+        "created_at": "2020-04-08T13:49:03.838Z",
+        "updated_at": "2020-04-08T13:49:03.838Z"
       }
     }
   ]
@@ -427,9 +427,9 @@ Content-Type: application/json; charset=utf-8
 #### Endpoint
 
 ```plaintext
-GET /api/v1/customers/8
+GET /api/v1/customers/29
 Content-Type: application/json
-Authorization: Bearer 7ea5b0662a77dcc11e8ea5c0bb426ad4
+Authorization: Bearer af9d6d31bcc04f0c79eae632966fcce6
 ```
 
 `GET /api/v1/customers/:id`
@@ -454,32 +454,32 @@ Content-Type: application/json; charset=utf-8
 
 ```json
 {
-  "id": 8,
-  "email": "marylou_gutkowski@armstrong.net",
-  "created_at": "2020-04-08T11:37:16.401Z",
-  "updated_at": "2020-04-08T11:37:16.401Z",
+  "id": 29,
+  "email": "brittaney@christiansen.info",
+  "created_at": "2020-04-08T13:49:04.479Z",
+  "updated_at": "2020-04-08T13:49:04.479Z",
   "organisation": {
-    "id": 11,
-    "name": "Lakin Group",
-    "domain": "marks-rowe-7",
-    "created_at": "2020-04-08T11:37:16.395Z"
+    "id": 27,
+    "name": "Reinger, Conroy and Halvorson",
+    "domain": "murphyschmeler-treutel-20",
+    "created_at": "2020-04-08T13:49:04.474Z"
   },
   "profile": {
-    "id": 8,
-    "customer_id": 8,
+    "id": 27,
+    "customer_id": 29,
     "title": "mr",
-    "first_name": "Lise",
-    "last_name": "Beier",
-    "birth_date": "1975-03-21",
-    "phone": "+3232411132",
-    "city": "Pacochaburgh",
-    "street": "Lanora Brooks",
-    "building": "597",
-    "building_addon": "Suite 514",
-    "postal_code": "60999",
+    "first_name": "Weldon",
+    "last_name": "Barrows",
+    "birth_date": "1965-05-11",
+    "phone": "+3225551212",
+    "city": "Cyrusland",
+    "street": "Jerrica Street",
+    "building": "72532",
+    "building_addon": "Suite 357",
+    "postal_code": "78001",
     "language": "nl",
-    "created_at": "2020-04-08T11:37:16.407Z",
-    "updated_at": "2020-04-08T11:37:16.407Z"
+    "created_at": "2020-04-08T13:49:04.489Z",
+    "updated_at": "2020-04-08T13:49:04.489Z"
   }
 }
 ```
@@ -526,9 +526,9 @@ Content-Type: application/json; charset=utf-8
 #### Endpoint
 
 ```plaintext
-GET /api/v1/customers/14
+GET /api/v1/customers/35
 Content-Type: application/json
-Authorization: Bearer 15c34e179870c50ee3c3ae771c8e5a97
+Authorization: Bearer c2c9f2689357d054980da0799600c86c
 ```
 
 `GET /api/v1/customers/:id`
@@ -579,9 +579,9 @@ Create an EAN record for the specified customer
 #### Endpoint
 
 ```plaintext
-POST /api/v1/customers/36/eans
+POST /api/v1/customers/1/eans
 Content-Type: application/json
-Authorization: Bearer dc045083ea01e01db8308e65c9bcd0a3
+Authorization: Bearer b045cd2c477489a90f4149922c4f15f2
 ```
 
 `POST /api/v1/customers/:customer_id/eans`
@@ -595,7 +595,7 @@ Authorization: Bearer dc045083ea01e01db8308e65c9bcd0a3
     "number": "542170967180397340",
     "product": "electricity",
     "reason": "normal",
-    "supplier_id": 10,
+    "supplier_id": 1,
     "building": "15",
     "building_addon": "A",
     "street": "street name",
@@ -627,7 +627,7 @@ Authorization: Bearer dc045083ea01e01db8308e65c9bcd0a3
 | ean *required* | Attributes for the EAN record |
 | ean[number]  | EAN number |
 | ean[product]  | Enum: ["gas", "electricity"]. The EAN record's product. Must be a value from the enum |
-| ean[reason]  | Enum: ["normal", "new", "reopened", "dropped", "moved"]. The reason why the customer is searching for a new offer. Must be a value from the enum. |
+| ean[reason]  | Enum: ["normal", "new", "reopened", "dropped", "moved"]. The reason of adding of a new EAN to the profile. Must be a value from the enum. |
 | ean[supplier_id]  | ID of the supplier for the EAN connection |
 | ean[building]  | The address for the EAN connection - building addon |
 | ean[building_addon]  | The address of the EAN connection - street |
@@ -639,8 +639,8 @@ Authorization: Bearer dc045083ea01e01db8308e65c9bcd0a3
 | ean[consumptions][volume]  | A consumption volume by the tariff |
 | ean[consumptions][price]  | A price for the tariff |
 | ean[recording_period]  | Recording period of the EAN (Meter check period). Available values: ["automatic", "monthly", "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"] |
-| ean[solar_panels]  | Type: *boolen*. For *electricity* only. A flag that the EAN connection has solar panels.  |
-| ean[inverter_max_power]  | Inverter Max Power. Only then solar panels flag is true |
+| ean[solar_panels]  | Type: *boolen*. For electricity EANs only. A flag that the EAN connection has solar panels.  |
+| ean[inverter_max_power]  | Inverter Max Power. Only when solar panels flag is true |
 | ean[contract_end_date]  | The date when the contract for the EAN connection ends |
 | ean[fixed_fee]  | Fixed fee a year charged per EAN connection |
 | ean[tariff_group]  | Values: ["mono", "dual", "monoExclusive", "dualExclusive"]. Tariff group for the EAN connection |
@@ -659,8 +659,8 @@ Content-Type: application/json; charset=utf-8
 
 ```json
 {
-  "id": 6,
-  "customer_id": 36,
+  "id": 1,
+  "customer_id": 1,
   "number": "542170967180397340",
   "product": "electricity",
   "reason": "normal",
@@ -685,10 +685,10 @@ Content-Type: application/json; charset=utf-8
   "recording_period": "february",
   "wkk": "0.00341",
   "gsc": "0.0214",
-  "created_at": "2020-04-08T11:37:17.789Z",
+  "created_at": "2020-04-08T13:49:03.519Z",
   "supplier": {
-    "id": 10,
-    "name": "Donnelly-Reichel 10"
+    "id": 1,
+    "name": "Zulauf, Yost and Considine 1"
   }
 }
 ```
@@ -703,7 +703,7 @@ Content-Type: application/json; charset=utf-8
 | customer_id | ID of the customer to whom the EAN record belongs to |
 | number | An EAN number of record |
 | product | Values: ["gas", "electricity"]. The EAN record's product |
-| reason | Values: ["normal", "new", "reopened", "dropped", "moved"]. The reason why the customer is searching for a new offer. |
+| reason | Values: ["normal", "new", "reopened", "dropped", "moved"]. The reason why the EAN was added to the profile. |
 | state | The current status of the EAN record |
 | building | The address of the EAN connection - building |
 | building_addon | The address of the EAN connection - building addon |
@@ -715,8 +715,8 @@ Content-Type: application/json; charset=utf-8
 | consumptions[name] | Name of the tariff |
 | consumptions[volume] | A consumption volume by the tariff |
 | consumptions[price] | A price for the tariff |
-| solar_panels | Type: *boolen*. For the *electricity* product only. A flag that the EAN connection has solar panels. |
-| inverter_max_power | Inverter Max Power. Only then solar panels flag is true |
+| solar_panels | Type: *boolen*. For electricity EANs only. A flag that the EAN connection has solar panels. |
+| inverter_max_power | Inverter Max Power. Only when solar panels flag is true |
 | contract_end_date | The date when the contract for the EAN connection ends |
 | fixed_fee | Fixed fee a year charged per EAN connection |
 | tariff_group | Values: ["mono", "dual", "monoExclusive", "dualExclusive"]. Tariff group for the EAN connection |
@@ -740,9 +740,9 @@ Content-Type: application/json; charset=utf-8
 #### Endpoint
 
 ```plaintext
-POST /api/v1/customers/35/eans
+POST /api/v1/customers/2/eans
 Content-Type: application/json
-Authorization: Bearer 6afa2947a9265446d023662dd10d27a8
+Authorization: Bearer b448b472fbd2314c764839264a6e9c00
 ```
 
 `POST /api/v1/customers/:customer_id/eans`
@@ -756,7 +756,7 @@ Authorization: Bearer 6afa2947a9265446d023662dd10d27a8
     "number": "542170967180397340",
     "product": "electricity",
     "reason": "normal",
-    "supplier_id": 8,
+    "supplier_id": 2,
     "building": "15",
     "building_addon": "A",
     "street": "street name",
@@ -788,7 +788,7 @@ Authorization: Bearer 6afa2947a9265446d023662dd10d27a8
 | ean *required* | Attributes for the EAN record |
 | ean[number]  | EAN number |
 | ean[product]  | Enum: ["gas", "electricity"]. The EAN record's product. Must be a value from the enum |
-| ean[reason]  | Enum: ["normal", "new", "reopened", "dropped", "moved"]. The reason why the customer is searching for a new offer. Must be a value from the enum. |
+| ean[reason]  | Enum: ["normal", "new", "reopened", "dropped", "moved"]. The reason of adding of a new EAN to the profile. Must be a value from the enum. |
 | ean[supplier_id]  | ID of the supplier for the EAN connection |
 | ean[building]  | The address for the EAN connection - building addon |
 | ean[building_addon]  | The address of the EAN connection - street |
@@ -800,8 +800,8 @@ Authorization: Bearer 6afa2947a9265446d023662dd10d27a8
 | ean[consumptions][volume]  | A consumption volume by the tariff |
 | ean[consumptions][price]  | A price for the tariff |
 | ean[recording_period]  | Recording period of the EAN (Meter check period). Available values: ["automatic", "monthly", "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"] |
-| ean[solar_panels]  | Type: *boolen*. For *electricity* only. A flag that the EAN connection has solar panels.  |
-| ean[inverter_max_power]  | Inverter Max Power. Only then solar panels flag is true |
+| ean[solar_panels]  | Type: *boolen*. For electricity EANs only. A flag that the EAN connection has solar panels.  |
+| ean[inverter_max_power]  | Inverter Max Power. Only when solar panels flag is true |
 | ean[contract_end_date]  | The date when the contract for the EAN connection ends |
 | ean[fixed_fee]  | Fixed fee a year charged per EAN connection |
 | ean[tariff_group]  | Values: ["mono", "dual", "monoExclusive", "dualExclusive"]. Tariff group for the EAN connection |
@@ -859,9 +859,9 @@ Returns available EAN records for the specified customer
 #### Endpoint
 
 ```plaintext
-GET /api/v1/customers/37/eans
+GET /api/v1/customers/5/eans
 Content-Type: application/json
-Authorization: Bearer a788659c941a6ed05e3e9e9000ddee59
+Authorization: Bearer 3516a9e9fe399dbf57a48c5c643a54d7
 ```
 
 `GET /api/v1/customers/:customer_id/eans`
@@ -887,53 +887,53 @@ Content-Type: application/json; charset=utf-8
 ```json
 [
   {
-    "id": 7,
-    "customer_id": 37,
-    "number": "548515259063953554",
+    "id": 4,
+    "customer_id": 5,
+    "number": "542201118980411876",
     "product": "electricity",
-    "reason": "normal",
-    "building": "8413",
-    "building_addon": "Suite 520",
-    "street": "Gutmann Turnpike",
-    "city": "Gutkowskiberg",
+    "reason": "reopened",
+    "building": "9378",
+    "building_addon": "Suite 519",
+    "street": "Boyle Center",
+    "city": "Port Jasperland",
     "state": "ready",
-    "postal_code": "82161-4900",
-    "solar_panels": false,
-    "inverter_max_power": 1846,
-    "fixed_fee": "21.0",
-    "tariff_group": "monoExclusive",
-    "recording_period": "january",
+    "postal_code": "32006-8890",
+    "solar_panels": true,
+    "inverter_max_power": 1083,
+    "fixed_fee": "20.0",
+    "tariff_group": "dual",
+    "recording_period": "automatic",
     "wkk": "0.00425",
     "gsc": "0.0215",
-    "created_at": "2020-04-08T11:37:17.884Z",
+    "created_at": "2020-04-08T13:49:03.764Z",
     "supplier": {
-      "id": 11,
-      "name": "Harris LLC 11"
+      "id": 6,
+      "name": "Bartell-Hodkiewicz 6"
     }
   },
   {
-    "id": 8,
-    "customer_id": 37,
-    "number": "546787317406942656",
+    "id": 5,
+    "customer_id": 5,
+    "number": "545791672899549543",
     "product": "electricity",
-    "reason": "normal",
-    "building": "27151",
-    "building_addon": "Suite 358",
-    "street": "Stacy Mall",
-    "city": "Randiview",
+    "reason": "new",
+    "building": "86981",
+    "building_addon": "Apt. 702",
+    "street": "Mills Square",
+    "city": "East Reyes",
     "state": "ready",
-    "postal_code": "96507",
+    "postal_code": "23925",
     "solar_panels": true,
-    "inverter_max_power": 964,
-    "fixed_fee": "38.0",
-    "tariff_group": "dual",
-    "recording_period": "january",
+    "inverter_max_power": 142,
+    "fixed_fee": "28.0",
+    "tariff_group": "mono",
+    "recording_period": "monthly",
     "wkk": "0.00425",
     "gsc": "0.0215",
-    "created_at": "2020-04-08T11:37:17.890Z",
+    "created_at": "2020-04-08T13:49:03.768Z",
     "supplier": {
-      "id": 11,
-      "name": "Harris LLC 11"
+      "id": 6,
+      "name": "Bartell-Hodkiewicz 6"
     }
   }
 ]
@@ -949,7 +949,7 @@ Content-Type: application/json; charset=utf-8
 | customer_id | ID of the customer to whom the EAN record belongs to |
 | number | An EAN number of record |
 | product | Values: ["gas", "electricity"]. The EAN record's product |
-| reason | Values: ["normal", "new", "reopened", "dropped", "moved"]. The reason why the customer is searching for a new offer. |
+| reason | Values: ["normal", "new", "reopened", "dropped", "moved"]. The reason why the EAN was added to the profile. |
 | state | The current status of the EAN record |
 | building | The address of the EAN connection - building |
 | building_addon | The address of the EAN connection - building addon |
@@ -961,8 +961,8 @@ Content-Type: application/json; charset=utf-8
 | consumptions[name] | Name of the tariff |
 | consumptions[volume] | A consumption volume by the tariff |
 | consumptions[price] | A price for the tariff |
-| solar_panels | Type: *boolen*. For the *electricity* product only. A flag that the EAN connection has solar panels. |
-| inverter_max_power | Inverter Max Power. Only then solar panels flag is true |
+| solar_panels | Type: *boolen*. For electricity EANs only. A flag that the EAN connection has solar panels. |
+| inverter_max_power | Inverter Max Power. Only when solar panels flag is true |
 | contract_end_date | The date when the contract for the EAN connection ends |
 | fixed_fee | Fixed fee a year charged per EAN connection |
 | tariff_group | Values: ["mono", "dual", "monoExclusive", "dualExclusive"]. Tariff group for the EAN connection |
@@ -995,9 +995,9 @@ Create multiple EAN records at once. The records will belong to the specified cu
 #### Endpoint
 
 ```plaintext
-POST /api/v1/customers/29/eans/bulk
+POST /api/v1/customers/38/eans/bulk
 Content-Type: application/json
-Authorization: Bearer 6bae71aa8ee84af90a5a6bc351713b19
+Authorization: Bearer 4daa6885407fa3aa20b9f64909330c2d
 ```
 
 `POST /api/v1/customers/:customer_id/eans/bulk`
@@ -1013,7 +1013,7 @@ Authorization: Bearer 6bae71aa8ee84af90a5a6bc351713b19
         "product": "electricity",
         "number": "542170967180397340",
         "reason": "normal",
-        "supplier_id": 1,
+        "supplier_id": 11,
         "street": "street name",
         "building": "15",
         "building_addon": "A",
@@ -1060,8 +1060,8 @@ Content-Type: application/json; charset=utf-8
 ```json
 [
   {
-    "id": 1,
-    "customer_id": 29,
+    "id": 9,
+    "customer_id": 38,
     "number": "542170967180397340",
     "product": "electricity",
     "reason": "normal",
@@ -1086,10 +1086,10 @@ Content-Type: application/json; charset=utf-8
     "recording_period": "february",
     "wkk": "0.00341",
     "gsc": "0.0214",
-    "created_at": "2020-04-08T11:37:17.380Z",
+    "created_at": "2020-04-08T13:49:04.881Z",
     "supplier": {
-      "id": 1,
-      "name": "Ruecker-Wolff 1"
+      "id": 11,
+      "name": "Block-Lind 11"
     }
   }
 ]
@@ -1105,7 +1105,7 @@ Content-Type: application/json; charset=utf-8
 | customer_id | ID of the customer to whom the EAN record belongs to |
 | number | An EAN number of record |
 | product | Values: ["gas", "electricity"]. The EAN record's product |
-| reason | Values: ["normal", "new", "reopened", "dropped", "moved"]. The reason why the customer is searching for a new offer. |
+| reason | Values: ["normal", "new", "reopened", "dropped", "moved"]. The reason why the EAN was added to the profile. |
 | state | The current status of the EAN record |
 | building | The address of the EAN connection - building |
 | building_addon | The address of the EAN connection - building addon |
@@ -1117,8 +1117,8 @@ Content-Type: application/json; charset=utf-8
 | consumptions[name] | Name of the tariff |
 | consumptions[volume] | A consumption volume by the tariff |
 | consumptions[price] | A price for the tariff |
-| solar_panels | Type: *boolen*. For the *electricity* product only. A flag that the EAN connection has solar panels. |
-| inverter_max_power | Inverter Max Power. Only then solar panels flag is true |
+| solar_panels | Type: *boolen*. For electricity EANs only. A flag that the EAN connection has solar panels. |
+| inverter_max_power | Inverter Max Power. Only when solar panels flag is true |
 | contract_end_date | The date when the contract for the EAN connection ends |
 | fixed_fee | Fixed fee a year charged per EAN connection |
 | tariff_group | Values: ["mono", "dual", "monoExclusive", "dualExclusive"]. Tariff group for the EAN connection |
@@ -1142,9 +1142,9 @@ Content-Type: application/json; charset=utf-8
 #### Endpoint
 
 ```plaintext
-POST /api/v1/customers/30/eans/bulk
+POST /api/v1/customers/37/eans/bulk
 Content-Type: application/json
-Authorization: Bearer 5413f4427bf394a155e9ed17fee6e034
+Authorization: Bearer b2efc9639342bc4f88b81b147b7bab72
 ```
 
 `POST /api/v1/customers/:customer_id/eans/bulk`
@@ -1160,7 +1160,7 @@ Authorization: Bearer 5413f4427bf394a155e9ed17fee6e034
         "product": "electricity",
         "number": "542170967180397340",
         "reason": "normal",
-        "supplier_id": 2,
+        "supplier_id": 9,
         "street": "street name",
         "building": "15",
         "building_addon": "A",
