@@ -41,7 +41,7 @@ Creates a customer for the current organisation and returns it's attributes
 ```plaintext
 POST /api/v1/customers
 Content-Type: application/json
-Authorization: Bearer 01ecce3cb6732dc6e5e64f66045c113f
+Authorization: Bearer 30594080d2566e1b940412b5d032778f
 ```
 
 `POST /api/v1/customers`
@@ -52,21 +52,20 @@ Authorization: Bearer 01ecce3cb6732dc6e5e64f66045c113f
 ```json
 {
   "customer": {
-    "email": "marcie@raynor.biz",
+    "email": "kiersten@zemlakbergnaum.name",
     "terms_and_conditions": true,
     "privacy_policy": true,
-    "registered_from_ip": "127.197.254.149",
     "profile": {
       "first_name": "Danny",
       "last_name": "Ocean",
       "title": "mr",
       "phone": "+3256980144",
-      "birth_date": "2000-04-08",
-      "city": "South Fermin",
-      "street": "1288 Marquardt Course",
-      "building": "42630",
-      "building_addon": "Suite 174",
-      "postal_code": "01650-4934",
+      "birth_date": "2000-04-09",
+      "city": "West Foster",
+      "street": "8725 Morissette Crossing",
+      "building": "9335",
+      "building_addon": "Suite 946",
+      "postal_code": "98001",
       "language": "fr"
     }
   }
@@ -79,7 +78,6 @@ Authorization: Bearer 01ecce3cb6732dc6e5e64f66045c113f
 | customer[email] *required* | A customer's email. Serves as an unique identifier of a customer. A customer with the same email must not exist in the system. |
 | customer[terms_and_conditions] *required* | Type: *boolean*. Flag that terms and conditions is accepted |
 | customer[privacy_policy] *required* | Type: *boolean*. Flag that the privacy policy is accepted |
-| customer[registered_from_ip] *required* | Customer registered from ip |
 | customer[profile] *required* | Attributes for the profile of a customer |
 | customer[profile][first_name] *required* | Customer profile first name |
 | customer[profile][last_name] *required* | Customer profile last name |
@@ -105,32 +103,32 @@ Content-Type: application/json; charset=utf-8
 
 ```json
 {
-  "id": 26,
-  "email": "marcie@raynor.biz",
-  "created_at": "2020-04-08T13:49:04.227Z",
-  "updated_at": "2020-04-08T13:49:04.247Z",
+  "id": 22,
+  "email": "kiersten@zemlakbergnaum.name",
+  "created_at": "2020-04-09T15:01:20.929Z",
+  "updated_at": "2020-04-09T15:01:20.972Z",
   "organisation": {
-    "id": 21,
-    "name": "Bradtke Inc",
-    "domain": "hammesgraham-cummings-16",
-    "created_at": "2020-04-08T13:49:04.184Z"
+    "id": 17,
+    "name": "Yost-Schamberger",
+    "domain": "kuphalhackett-blickblanda-11",
+    "created_at": "2020-04-09T15:01:20.882Z"
   },
   "profile": {
-    "id": 24,
-    "customer_id": 26,
+    "id": 22,
+    "customer_id": 22,
     "title": "mr",
     "first_name": "Danny",
     "last_name": "Ocean",
-    "birth_date": "2000-04-08",
+    "birth_date": "2000-04-09",
     "phone": "+3256980144",
-    "city": "South Fermin",
-    "street": "1288 Marquardt Course",
-    "building": "42630",
-    "building_addon": "Suite 174",
-    "postal_code": "01650-4934",
+    "city": "West Foster",
+    "street": "8725 Morissette Crossing",
+    "building": "9335",
+    "building_addon": "Suite 946",
+    "postal_code": "98001",
     "language": "fr",
-    "created_at": "2020-04-08T13:49:04.229Z",
-    "updated_at": "2020-04-08T13:49:04.229Z"
+    "created_at": "2020-04-09T15:01:20.931Z",
+    "updated_at": "2020-04-09T15:01:20.931Z"
   }
 }
 ```
@@ -180,7 +178,7 @@ Content-Type: application/json; charset=utf-8
 ```plaintext
 POST /api/v1/customers
 Content-Type: application/json
-Authorization: Bearer 78cc9766eafe035b75d4f43fd83d0aea
+Authorization: Bearer 53f94624f6bbb61fb60635b9c9700bd4
 ```
 
 `POST /api/v1/customers`
@@ -191,21 +189,20 @@ Authorization: Bearer 78cc9766eafe035b75d4f43fd83d0aea
 ```json
 {
   "customer": {
-    "email": "jeffry@hammes.co",
+    "email": "blake.murphy@buckridge.org",
     "terms_and_conditions": true,
     "privacy_policy": true,
-    "registered_from_ip": "42.130.46.89",
     "profile": {
       "first_name": null,
       "last_name": "Ocean",
       "title": "mr",
       "phone": "+3256980144",
-      "birth_date": "2000-04-08",
-      "city": "Connellyhaven",
-      "street": "817 Andre Park",
-      "building": "485",
-      "building_addon": "Apt. 813",
-      "postal_code": "38502-6787",
+      "birth_date": "2000-04-09",
+      "city": "New Gregory",
+      "street": "8646 Buford Canyon",
+      "building": "1386",
+      "building_addon": "Apt. 417",
+      "postal_code": "05736-6186",
       "language": "nl"
     }
   }
@@ -218,7 +215,6 @@ Authorization: Bearer 78cc9766eafe035b75d4f43fd83d0aea
 | customer[email] *required* | A customer's email. Serves as an unique identifier of a customer. A customer with the same email must not exist in the system. |
 | customer[terms_and_conditions] *required* | Type: *boolean*. Flag that terms and conditions is accepted |
 | customer[privacy_policy] *required* | Type: *boolean*. Flag that the privacy policy is accepted |
-| customer[registered_from_ip] *required* | Customer registered from ip |
 | customer[profile] *required* | Attributes for the profile of a customer |
 | customer[profile][first_name] *required* | Customer profile first name |
 | customer[profile][last_name] *required* | Customer profile last name |
@@ -281,7 +277,7 @@ Current organisation defined based on provided API token.
 ```plaintext
 GET /api/v1/customers?page=1&amp;per=2
 Content-Type: application/json
-Authorization: Bearer 451e5b357e0575565b6cf26c9488bec7
+Authorization: Bearer e07b91d18bd54367d20748f990386d8b
 ```
 
 `GET /api/v1/customers`
@@ -319,61 +315,61 @@ Content-Type: application/json; charset=utf-8
   "total_pages": 2,
   "records": [
     {
-      "id": 7,
-      "email": "mickey.christiansen@sanford.co",
-      "created_at": "2020-04-08T13:49:03.812Z",
-      "updated_at": "2020-04-08T13:49:03.812Z",
+      "id": 1,
+      "email": "lorean@flatley.biz",
+      "created_at": "2020-04-09T15:01:20.386Z",
+      "updated_at": "2020-04-09T15:01:20.386Z",
       "organisation": {
-        "id": 9,
-        "name": "Altenwerth-Funk",
-        "domain": "harvey-rippin-8",
-        "created_at": "2020-04-08T13:49:03.808Z"
+        "id": 2,
+        "name": "Ratke-Pollich",
+        "domain": "metz-moen-1",
+        "created_at": "2020-04-09T15:01:20.357Z"
       },
       "profile": {
-        "id": 5,
-        "customer_id": 7,
+        "id": 1,
+        "customer_id": 1,
         "title": "mr",
-        "first_name": "Nia",
-        "last_name": "Krajcik",
-        "birth_date": "1965-07-26",
-        "phone": "+3256980144",
-        "city": "Jaskolskiside",
-        "street": "Swift Roads",
-        "building": "929",
-        "building_addon": "Suite 717",
-        "postal_code": "15635-6980",
-        "language": "nl",
-        "created_at": "2020-04-08T13:49:03.816Z",
-        "updated_at": "2020-04-08T13:49:03.816Z"
+        "first_name": "Hsiu",
+        "last_name": "Ledner",
+        "birth_date": "1957-05-16",
+        "phone": "+3232411132",
+        "city": "Lake Russbury",
+        "street": "Bergstrom Orchard",
+        "building": "27393",
+        "building_addon": "Suite 780",
+        "postal_code": "09760-8646",
+        "language": "fr",
+        "created_at": "2020-04-09T15:01:20.437Z",
+        "updated_at": "2020-04-09T15:01:20.437Z"
       }
     },
     {
-      "id": 9,
-      "email": "jalisa@hermancain.org",
-      "created_at": "2020-04-08T13:49:03.833Z",
-      "updated_at": "2020-04-08T13:49:03.833Z",
+      "id": 3,
+      "email": "linh.jacobson@armstrong.info",
+      "created_at": "2020-04-09T15:01:20.457Z",
+      "updated_at": "2020-04-09T15:01:20.457Z",
       "organisation": {
-        "id": 9,
-        "name": "Altenwerth-Funk",
-        "domain": "harvey-rippin-8",
-        "created_at": "2020-04-08T13:49:03.808Z"
+        "id": 2,
+        "name": "Ratke-Pollich",
+        "domain": "metz-moen-1",
+        "created_at": "2020-04-09T15:01:20.357Z"
       },
       "profile": {
-        "id": 7,
-        "customer_id": 9,
+        "id": 3,
+        "customer_id": 3,
         "title": "mr",
-        "first_name": "Aubrey",
-        "last_name": "Haley",
-        "birth_date": "1997-07-05",
-        "phone": "+3232411132",
-        "city": "Farahmouth",
-        "street": "Carolyne Crest",
-        "building": "9056",
-        "building_addon": "Apt. 913",
-        "postal_code": "11702-2541",
-        "language": "nl",
-        "created_at": "2020-04-08T13:49:03.838Z",
-        "updated_at": "2020-04-08T13:49:03.838Z"
+        "first_name": "Jennette",
+        "last_name": "Cruickshank",
+        "birth_date": "2000-03-20",
+        "phone": "+3256980144",
+        "city": "South Quentinmouth",
+        "street": "Wilber Terrace",
+        "building": "2192",
+        "building_addon": "Apt. 105",
+        "postal_code": "86555-3067",
+        "language": "fr",
+        "created_at": "2020-04-09T15:01:20.461Z",
+        "updated_at": "2020-04-09T15:01:20.461Z"
       }
     }
   ]
@@ -427,9 +423,9 @@ Content-Type: application/json; charset=utf-8
 #### Endpoint
 
 ```plaintext
-GET /api/v1/customers/29
+GET /api/v1/customers/23
 Content-Type: application/json
-Authorization: Bearer af9d6d31bcc04f0c79eae632966fcce6
+Authorization: Bearer eee6e53375ed5febdd31ef50f32cb00b
 ```
 
 `GET /api/v1/customers/:id`
@@ -454,32 +450,32 @@ Content-Type: application/json; charset=utf-8
 
 ```json
 {
-  "id": 29,
-  "email": "brittaney@christiansen.info",
-  "created_at": "2020-04-08T13:49:04.479Z",
-  "updated_at": "2020-04-08T13:49:04.479Z",
+  "id": 23,
+  "email": "loria_mckenzie@kerluke.biz",
+  "created_at": "2020-04-09T15:01:21.175Z",
+  "updated_at": "2020-04-09T15:01:21.175Z",
   "organisation": {
-    "id": 27,
-    "name": "Reinger, Conroy and Halvorson",
-    "domain": "murphyschmeler-treutel-20",
-    "created_at": "2020-04-08T13:49:04.474Z"
+    "id": 20,
+    "name": "Kuvalis, Berge and Schuppe",
+    "domain": "lind-beahan-13",
+    "created_at": "2020-04-09T15:01:21.171Z"
   },
   "profile": {
-    "id": 27,
-    "customer_id": 29,
+    "id": 23,
+    "customer_id": 23,
     "title": "mr",
-    "first_name": "Weldon",
-    "last_name": "Barrows",
-    "birth_date": "1965-05-11",
+    "first_name": "Blaine",
+    "last_name": "Bauch",
+    "birth_date": "1961-08-23",
     "phone": "+3225551212",
-    "city": "Cyrusland",
-    "street": "Jerrica Street",
-    "building": "72532",
-    "building_addon": "Suite 357",
-    "postal_code": "78001",
-    "language": "nl",
-    "created_at": "2020-04-08T13:49:04.489Z",
-    "updated_at": "2020-04-08T13:49:04.489Z"
+    "city": "South Reubenfort",
+    "street": "Shields Common",
+    "building": "164",
+    "building_addon": "Suite 614",
+    "postal_code": "14522-1564",
+    "language": "fr",
+    "created_at": "2020-04-09T15:01:21.179Z",
+    "updated_at": "2020-04-09T15:01:21.179Z"
   }
 }
 ```
@@ -526,9 +522,9 @@ Content-Type: application/json; charset=utf-8
 #### Endpoint
 
 ```plaintext
-GET /api/v1/customers/35
+GET /api/v1/customers/27
 Content-Type: application/json
-Authorization: Bearer c2c9f2689357d054980da0799600c86c
+Authorization: Bearer 61249cee7d430c66beb8f2218a5ac8ce
 ```
 
 `GET /api/v1/customers/:id`
@@ -579,9 +575,9 @@ Create an EAN record for the specified customer
 #### Endpoint
 
 ```plaintext
-POST /api/v1/customers/1/eans
+POST /api/v1/customers/32/eans
 Content-Type: application/json
-Authorization: Bearer b045cd2c477489a90f4149922c4f15f2
+Authorization: Bearer 34c4d6dd65ff27d9bec725eb98b845dc
 ```
 
 `POST /api/v1/customers/:customer_id/eans`
@@ -595,7 +591,7 @@ Authorization: Bearer b045cd2c477489a90f4149922c4f15f2
     "number": "542170967180397340",
     "product": "electricity",
     "reason": "normal",
-    "supplier_id": 1,
+    "supplier_id": 5,
     "building": "15",
     "building_addon": "A",
     "street": "street name",
@@ -611,7 +607,7 @@ Authorization: Bearer b045cd2c477489a90f4149922c4f15f2
     "recording_period": "february",
     "solar_panels": "true",
     "inverter_max_power": "315",
-    "contract_end_date": "2020-10-08",
+    "contract_end_date": "2020-10-09",
     "fixed_fee": "1.00",
     "tariff_group": "mono",
     "wkk": "0.00341",
@@ -659,8 +655,8 @@ Content-Type: application/json; charset=utf-8
 
 ```json
 {
-  "id": 1,
-  "customer_id": 1,
+  "id": 3,
+  "customer_id": 32,
   "number": "542170967180397340",
   "product": "electricity",
   "reason": "normal",
@@ -679,16 +675,16 @@ Content-Type: application/json; charset=utf-8
   ],
   "solar_panels": true,
   "inverter_max_power": 315,
-  "contract_end_date": "2020-10-08",
+  "contract_end_date": "2020-10-09",
   "fixed_fee": "1.0",
   "tariff_group": "mono",
   "recording_period": "february",
   "wkk": "0.00341",
   "gsc": "0.0214",
-  "created_at": "2020-04-08T13:49:03.519Z",
+  "created_at": "2020-04-09T15:01:21.758Z",
   "supplier": {
-    "id": 1,
-    "name": "Zulauf, Yost and Considine 1"
+    "id": 5,
+    "name": "Terry and Sons 5"
   }
 }
 ```
@@ -740,9 +736,9 @@ Content-Type: application/json; charset=utf-8
 #### Endpoint
 
 ```plaintext
-POST /api/v1/customers/2/eans
+POST /api/v1/customers/31/eans
 Content-Type: application/json
-Authorization: Bearer b448b472fbd2314c764839264a6e9c00
+Authorization: Bearer 7216bde8172661b351f1f33c8d5b6da3
 ```
 
 `POST /api/v1/customers/:customer_id/eans`
@@ -756,7 +752,7 @@ Authorization: Bearer b448b472fbd2314c764839264a6e9c00
     "number": "542170967180397340",
     "product": "electricity",
     "reason": "normal",
-    "supplier_id": 2,
+    "supplier_id": 3,
     "building": "15",
     "building_addon": "A",
     "street": "street name",
@@ -772,7 +768,7 @@ Authorization: Bearer b448b472fbd2314c764839264a6e9c00
     "recording_period": "february",
     "solar_panels": "true",
     "inverter_max_power": "315",
-    "contract_end_date": "2020-10-08",
+    "contract_end_date": "2020-10-09",
     "fixed_fee": "1.00",
     "tariff_group": "mono",
     "wkk": "0.00341",
@@ -859,9 +855,9 @@ Returns available EAN records for the specified customer
 #### Endpoint
 
 ```plaintext
-GET /api/v1/customers/5/eans
+GET /api/v1/customers/33/eans
 Content-Type: application/json
-Authorization: Bearer 3516a9e9fe399dbf57a48c5c643a54d7
+Authorization: Bearer 0300b3a7b32fdfc86ffc8896dba2630e
 ```
 
 `GET /api/v1/customers/:customer_id/eans`
@@ -888,52 +884,52 @@ Content-Type: application/json; charset=utf-8
 [
   {
     "id": 4,
-    "customer_id": 5,
-    "number": "542201118980411876",
+    "customer_id": 33,
+    "number": "542394291906836553",
     "product": "electricity",
-    "reason": "reopened",
-    "building": "9378",
-    "building_addon": "Suite 519",
-    "street": "Boyle Center",
-    "city": "Port Jasperland",
+    "reason": "new",
+    "building": "6559",
+    "building_addon": "Apt. 338",
+    "street": "Bechtelar Ferry",
+    "city": "Welchburgh",
     "state": "ready",
-    "postal_code": "32006-8890",
+    "postal_code": "90165",
     "solar_panels": true,
-    "inverter_max_power": 1083,
-    "fixed_fee": "20.0",
+    "inverter_max_power": 1625,
+    "fixed_fee": "19.0",
     "tariff_group": "dual",
-    "recording_period": "automatic",
+    "recording_period": "monthly",
     "wkk": "0.00425",
     "gsc": "0.0215",
-    "created_at": "2020-04-08T13:49:03.764Z",
+    "created_at": "2020-04-09T15:01:21.839Z",
     "supplier": {
       "id": 6,
-      "name": "Bartell-Hodkiewicz 6"
+      "name": "Kuvalis-Koss 6"
     }
   },
   {
     "id": 5,
-    "customer_id": 5,
-    "number": "545791672899549543",
+    "customer_id": 33,
+    "number": "543787838066271119",
     "product": "electricity",
-    "reason": "new",
-    "building": "86981",
-    "building_addon": "Apt. 702",
-    "street": "Mills Square",
-    "city": "East Reyes",
+    "reason": "normal",
+    "building": "648",
+    "building_addon": "Apt. 134",
+    "street": "Williamson Circle",
+    "city": "South Freddie",
     "state": "ready",
-    "postal_code": "23925",
+    "postal_code": "43579",
     "solar_panels": true,
-    "inverter_max_power": 142,
-    "fixed_fee": "28.0",
+    "inverter_max_power": 151,
+    "fixed_fee": "11.0",
     "tariff_group": "mono",
-    "recording_period": "monthly",
+    "recording_period": "automatic",
     "wkk": "0.00425",
     "gsc": "0.0215",
-    "created_at": "2020-04-08T13:49:03.768Z",
+    "created_at": "2020-04-09T15:01:21.844Z",
     "supplier": {
       "id": 6,
-      "name": "Bartell-Hodkiewicz 6"
+      "name": "Kuvalis-Koss 6"
     }
   }
 ]
@@ -997,7 +993,7 @@ Create multiple EAN records at once. The records will belong to the specified cu
 ```plaintext
 POST /api/v1/customers/38/eans/bulk
 Content-Type: application/json
-Authorization: Bearer 4daa6885407fa3aa20b9f64909330c2d
+Authorization: Bearer e9104b10c70eea2cddee2efc4f2a2300
 ```
 
 `POST /api/v1/customers/:customer_id/eans/bulk`
@@ -1029,7 +1025,7 @@ Authorization: Bearer 4daa6885407fa3aa20b9f64909330c2d
         "fixed_fee": "1.00",
         "solar_panels": "true",
         "recording_period": "february",
-        "contract_end_date": "2020-10-08",
+        "contract_end_date": "2020-10-09",
         "respect_contract_end_date": true,
         "tariff_group": "mono",
         "gsc": "0.0214",
@@ -1080,16 +1076,16 @@ Content-Type: application/json; charset=utf-8
     ],
     "solar_panels": true,
     "inverter_max_power": 315,
-    "contract_end_date": "2020-10-08",
+    "contract_end_date": "2020-10-09",
     "fixed_fee": "1.0",
     "tariff_group": "mono",
     "recording_period": "february",
     "wkk": "0.00341",
     "gsc": "0.0214",
-    "created_at": "2020-04-08T13:49:04.881Z",
+    "created_at": "2020-04-09T15:01:22.030Z",
     "supplier": {
       "id": 11,
-      "name": "Block-Lind 11"
+      "name": "Pouros, Armstrong and Dickinson 11"
     }
   }
 ]
@@ -1142,9 +1138,9 @@ Content-Type: application/json; charset=utf-8
 #### Endpoint
 
 ```plaintext
-POST /api/v1/customers/37/eans/bulk
+POST /api/v1/customers/35/eans/bulk
 Content-Type: application/json
-Authorization: Bearer b2efc9639342bc4f88b81b147b7bab72
+Authorization: Bearer 277632ad939540c86d3edbd580f8c1c7
 ```
 
 `POST /api/v1/customers/:customer_id/eans/bulk`
@@ -1160,7 +1156,7 @@ Authorization: Bearer b2efc9639342bc4f88b81b147b7bab72
         "product": "electricity",
         "number": "542170967180397340",
         "reason": "normal",
-        "supplier_id": 9,
+        "supplier_id": 7,
         "street": "street name",
         "building": "15",
         "building_addon": "A",
@@ -1176,7 +1172,7 @@ Authorization: Bearer b2efc9639342bc4f88b81b147b7bab72
         "fixed_fee": "1.00",
         "solar_panels": "true",
         "recording_period": "february",
-        "contract_end_date": "2020-10-08",
+        "contract_end_date": "2020-10-09",
         "respect_contract_end_date": true,
         "tariff_group": "mono",
         "gsc": "0.0214",
